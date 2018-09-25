@@ -1,6 +1,7 @@
 package com.edwinacubillos.sqliteexample;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
@@ -94,5 +95,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         sqLiteDatabase.close();
+    }
+
+    public void listaClicked(View view) {
+        Intent i = new Intent(this, ListaActivity.class);
+        startActivity(i);
     }
 }
