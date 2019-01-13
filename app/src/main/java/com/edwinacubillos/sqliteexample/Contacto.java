@@ -1,21 +1,24 @@
 package com.edwinacubillos.sqliteexample;
 
 public class Contacto {
-    private int id;
+    private String id;
     private String nombre, telefono, correo;
 
-    public Contacto(int id, String nombre, String telefono, String correo) {
+    public Contacto() {
+    }
+
+    public Contacto(String id, String nombre, String telefono, String correo) {
         this.id = id;
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
